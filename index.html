@@ -1,0 +1,40 @@
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<div id="body">
+		<div id="header">
+			<nav class="navbar navbar-light bg-light">
+				<span class="navbar-brand h1" id="siteNameHeader"/>
+			</nav>
+		</div>
+		<br/>
+		<div id="content" class="container">
+			<div class="row">
+				<div class="jumbotron col-md-12 text-center">
+                    <row>
+                         <h1 class="display-4">Welcome to <span id="siteNameTitle"/></h1>
+                    </row>
+					<row>
+                        <a class="btn btn-primary btn-xlarge" href="mailto:domainmanager60221023@gmail.com" role="button" style="margin-top: 10 !important;">Request Information</a>
+                    </row>
+					
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <script type="text/javascript">
+        function showDomain() {
+            var siteName = window.location.hostname;
+            if(siteName == ""){
+                siteName = "Landing Page"
+            }
+            document.getElementById("siteNameHeader").textContent= siteName;
+            document.getElementById("siteNameTitle").textContent= siteName;
+            document.title= siteName;
+        }
+        window.onload = showDomain;
+        </script>
+</html>	
